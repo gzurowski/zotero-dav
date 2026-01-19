@@ -44,6 +44,18 @@ Then run:
 docker compose up -d
 ```
 
+## Configuring Zotero
+
+1. Open Zotero and go to **Settings**
+2. Select the **Sync** tab
+3. Under **File Syncing**, check **Sync attachment files in My Library**
+4. Select **WebDAV** from the dropdown
+5. Enter your server details:
+   - **URL:** `http://your-server:8080/zotero/`
+   - **Username:** Your configured username (e.g., `myuser`)
+   - **Password:** Your configured password
+6. Click **Verify Server** to test the connection
+
 ## Development
 
 Clone this repository:
