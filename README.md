@@ -44,6 +44,15 @@ Then run:
 docker compose up -d
 ```
 
+## Configuration
+
+| Environment Variable | Default  | Description                 |
+| -------------------- | -------- | --------------------------- |
+| `ZOTERO_USER`        | `zotero` | WebDAV username             |
+| `ZOTERO_PASS`        | `zotero` | WebDAV password             |
+| `UID`                | `101`    | User ID for file ownership  |
+| `GID`                | `101`    | Group ID for file ownership |
+
 ## Configuring Zotero
 
 1. Open Zotero and go to **Settings**
