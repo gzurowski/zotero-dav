@@ -3,7 +3,7 @@ services:
     build:
       context: ./src
     ports:
-      - "8888:80"
+      - "${PORT:-8888}:80"
     environment:
       - ZOTERO_USER=zotero
       - ZOTERO_PASS=zotero
