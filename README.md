@@ -1,4 +1,4 @@
-# Zotero Nginx
+# Zotero DAV
 
 [![Docker Hub](https://img.shields.io/docker/v/gzurowski/zotero-dav?label=Docker%20Hub)](https://hub.docker.com/r/gzurowski/zotero-dav)
 
