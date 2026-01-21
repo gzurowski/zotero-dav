@@ -1,6 +1,7 @@
 # Zotero DAV
 
 [![Docker Hub](https://img.shields.io/docker/v/gzurowski/zotero-dav?label=Docker%20Hub)](https://hub.docker.com/r/gzurowski/zotero-dav)
+[![Security](https://github.com/gzurowski/zotero-dav/actions/workflows/security.yml/badge.svg)](https://github.com/gzurowski/zotero-dav/actions/workflows/security.yml)
 
 A Docker image providing WebDAV access for Zotero, built on the official Nginx Alpine Linux image.
 
