@@ -1,5 +1,5 @@
 ## Builder
-FROM nginx:alpine AS builder
+FROM nginx:1.29-alpine AS builder
 
 RUN apk add --no-cache \
     gcc \
@@ -23,7 +23,7 @@ RUN cd /tmp/nginx-${NGINX_VERSION} && \
     make modules
 
 ## Main
-FROM nginx:alpine
+FROM nginx:1.29-alpine
 
 # Copy compiled module
 COPY --from=builder /tmp/nginx-${NGINX_VERSION}/objs/ngx_http_dav_ext_module.so /etc/nginx/modules/
