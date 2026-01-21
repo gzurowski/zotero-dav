@@ -63,4 +63,5 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: gzurowski/zotero-dav
           readme-filepath: ./README.md
+          short-description: ${{ github.event.repository.description }}
           enable-url-completion: true
