@@ -28,7 +28,8 @@ FROM nginx:1.29-alpine
 # Copy compiled module
 COPY --from=builder /tmp/nginx-${NGINX_VERSION}/objs/ngx_http_dav_ext_module.so /etc/nginx/modules/
 
-RUN apk add --no-cache \
+RUN apk upgrade --no-cache && \
+    apk add --no-cache \
     apache2-utils \
     libxml2
 
